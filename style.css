@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Sacramento&display=swap');
+
+
+header {
+	background-color: #fff;
+	
+}
+
+
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; 
+   border:none;
+   text-decoration: none !important;
+   text-transform: capitalize;
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: #A52A2A;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+
+
+
+section{
+   padding:7rem 2rem;
+   
+}
+
+
+
+.heading{
+   text-align: center;
+   font-size: 4rem;
+   color:#333;
+   text-transform: uppercase;
+   font-weight: bolder;
+   margin-bottom: 3rem;
+   font-family: 'Pacifico', cursive;
+}
+
+
+.link-btn{
+   display: inline-block;
+   padding:1rem 3rem;
+   border-radius: .5rem;
+   background-color: #A52A2A;
+   cursor: pointer;
+   font-size: 1.7rem;
+   color:#fff;
+}
+
+
+
+
+.link-btn:hover{
+   text-decoration:none;
+   opacity:80%;
+   transition:.5s;
+   cursor:pointer;
+   color:#fff;
+}
+
+
+
+.header{
+   padding:2rem;
+   border-bottom:.2rem solid rgba(0,0,0,.1);;
+}
+
+
+.header.active{
+   background-color:#fff;
+   box-shadow:.5rem 1rem rgba(0,0,0,.1);
+   border:0;
+}
+
+
+.header .logo{
+   font-size: 2rem;
+   color:#333;
+   font-family: 'Pacifico', cursive;
+}
+
+.header .logo span{
+   color:#A52A2A;
+}
+
+
+.header .nav a{
+   margin:0 1rem;
+   font-size: 1.7rem;
+   color:#333;
+}
+
+
+.header .nav a:hover{
+   color:#A52A2A;
+}
+
+
+
+#menu-btn{
+   font-size: 2.5rem;
+   color:#333;
+   cursor: pointer;
+   display: none;
+}
+
+
+.home{
+   background:url(http://localhost/dermasurgical/photos/beauty.jfif) no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+
+.home .content{
+   width: 55rem;
+   padding:1rem;
+}
+
+.home .content h3{
+   font-size: 3rem;
+   text-transform: uppercase;
+   color:#333;
+}
+
+
+.home .content p{
+   line-height: 2;
+   font-size: 1.5rem;
+   color:#666;
+   padding:1rem 0;
+  
+}
+
+
+
+.about .row{
+   min-height: 50vh;
+}
+.about .content span{
+   font-size: 2rem;
+   color:#A52A2A;
+   font-family: 'Pacifico', cursive;
+   text-align:left;
+}
+
+.about .content h3{
+   font-size: 2rem;
+   color:#333;
+   margin-top: 1rem;
+   text-align:left;
+}
+
+.about .content p{
+   padding:1rem 0;
+   font-size: 1.4rem;
+   color:#666;
+   line-height: 2;
+   text-align:left;
+}
+
+
+.services{
+   background-color: #eee;
+}
+
+
+.services .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+  
+}
+
+.services .box-container .box{
+   text-align: center;
+   padding:2rem;
+   background-color: #fff;
+   box-shadow:.5rem 1rem rgba(0,0,0,.1);
+   border-radius: .5rem;
+   
+}
+
+.services .box-container .box img{
+   margin:1rem 0;
+   height: 4rem;
+   
+}
+
+
+.services .box-container .box h3{
+   font-size: 3rem;
+   padding:1rem 0;
+   color::#333;
+   font-family: 'Pacifico', cursive;
+   font-family: 'Sacramento', cursive;
+}
+
+.services .box-container .box p{
+   font-size: 1.5rem;
+   color:#666;
+   line-height: 2;
+}
+
+.process .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(40rem, 6fr));
+   gap:2rem;
+}
+
+
+.process .box-container .box{
+   background-color:#A52A2A;
+   padding:2rem;
+   border-radius: .5rem;
+   text-align: center;
+   box-shadow: .5rem 1rem rgba(0,0,0,.1);
+     
+}
+
+.process .box-container .box img{
+   height: 20rem;
+   margin:1rem 0;
+   
+   
+}
+
+
+
+.process .box-container .box h3{
+   font-size: 3rem;
+   color:#fff;
+   margin:2rem 0;
+   font-family: 'Pacifico', cursive;
+   font-family: 'Sacramento', cursive;
+}
+
+.process .box-container .box p{
+   font-size: 2rem;
+   color:#fff;
+   line-height: 2;
+}
+
+
+.staff{
+   background-color: #eee;
+}
+
+.staff .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+   padding: 10px;
+}
+
+.staff .box-container .box{
+   background-color: #fff;
+   text-align: center;
+   border-radius: .5rem;
+   box-shadow: .5rem 1rem rgba(0,0,0,.1);
+   padding:1rem;
+   
+}
+
+
+.staff .box-container .box img{
+   height: 10rem;
+   width: 10rem;
+   border-radius: 50%;
+}
+
+.staff .box-container .box p{
+   padding:2rem 0;
+   line-height: 2;
+   font-size: 1rem;
+   color:#666;
+   margin-bottom: 0;
+}
+
+.staff .box-container .box .stars{
+   padding:.5rem 1.5rem;
+   border-radius: .5rem;
+   background-color: #eee;
+   margin-bottom: 2rem;
+   display: inline-block;
+}
+
+.staff .box-container .box .stars i{
+   font-size: 1.5rem;
+   color:#A52A2A;
+}
+
+.staff .box-container .box h3{
+   font-size: 2rem;
+   color:#333;
+   
+}
+
+.staff .box-container .box span{
+   color:#666;
+   font-size: 1.5rem;
+}
+
+
+.forms {
+	display:inline-block;
+	margin:auto;
+	width: 100%;
+	
+}
+
+.search form{
+   border-radius: .5rem;
+   background-color: #eee;
+   padding:2rem;
+   margin:0 auto;
+   max-width: 50rem;
+}
+
+
+.search form .docteurN{
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   background-color: #A52A2A;
+   padding:1.2rem 1rem;
+   font-size: 1.7rem;
+   color:#fff;
+   text-align: center;
+}
+
+.search form .box{
+   width: 100%;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   background-color: #fff;
+   padding:1.2rem 1.4rem;
+   font-size: 1.7rem;
+   color:#333;
+   text-transform: none;
+}
+
+.search form span{
+   font-size: 1.7rem;
+   color:#333;
+}
+
+
+.contact form{
+   border-radius: .5rem;
+   background-color: #eee;
+   padding:2rem;
+   margin:0 auto;
+   max-width: 50rem;
+}
+
+.contact form .message{
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   background-color: #A52A2A;
+   padding:1.2rem 1rem;
+   font-size: 1.7rem;
+   color:#fff;
+   text-align: center;
+}
+
+.contact form .box{
+   width: 100%;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   background-color: #fff;
+   padding:1.2rem 1.4rem;
+   font-size: 1.7rem;
+   color:#333;
+   text-transform: none;
+}
+
+.contact form span{
+   font-size: 1.7rem;
+   color:#333;
+}
+
+.adminn{
+	
+	margin:auto;
+	width: 100%;
+}
+
+.login form{
+   border-radius: .5rem;
+   background-color: #eee;
+   padding:2rem;
+   margin:0 auto;
+   max-width: 50rem;
+}
+
+
+.login form .message{
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   background-color: #A52A2A;
+   padding:1.2rem 1rem;
+   font-size: 1.7rem;
+   color:#fff;
+   text-align: center;
+}
+
+.login form .box{
+   width: 100%;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   background-color: #fff;
+   padding:1.2rem 1.4rem;
+   font-size: 1.7rem;
+   color:#333;
+   text-transform: none;
+}
+
+.login form span{
+   font-size: 1.7rem;
+   color:#333;
+}
+
+
+.admin form{
+   border-radius: .5rem;
+   background-color: #eee;
+   padding:2rem;
+   margin:0 auto;
+   max-width: 50rem;
+}
+
+.admin form .message{
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   background-color: #A52A2A;
+   padding:1.2rem 1rem;
+   font-size: 1.7rem;
+   color:#fff;
+   text-align: center;
+}
+	
+.admin form .box{
+   width: 100%;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   background-color: #fff;
+   padding:1.2rem 1.4rem;
+   font-size: 1.7rem;
+   color:#333;
+   text-transform: none;
+}
+
+.admin form span{
+   font-size: 1.7rem;
+   color:#333;
+}
+
+
+
+.footer{
+   background-color: #eee;
+   
+   background-position: center;
+}
+
+.footer .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 0fr));
+   gap:1rem;
+}
+
+.footer .box-container .box{
+   text-align: center;
+}
+
+.footer .box-container .box i{
+   height: 5rem;
+   width: 5rem;
+   border-radius: 50%;
+   line-height: 5rem;
+   font-size: 2rem;
+   background-color: #A52A2A;
+   color:#fff;
+}
+
+.footer .box-container .box h3{
+   font-size: 2rem;
+   margin:2rem 0;
+   color:#333;
+}
+
+.footer .box-container .box p{
+   font-size: 1.5rem;
+   color:#666;
+   text-transform: none;
+}
+
+.footer .credit{
+   text-align: center;
+   border-top: .2rem solid rgba(0,0,0,.1);
+   padding-top: 2rem;
+   margin-top: 2rem;
+   font-size: 2rem;
+   color:#666;
+}
+
+.footer .credit span{
+   color:#A52A2A;
+}
+
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+   .header .link-btn{
+      display: none;
+   }
+
+   section{
+      padding:5rem 2rem;
+   }
+
+}
+
+
+@media (max-width:768px){
+
+   section{
+      padding:3rem 1rem;
+   }
+
+   #menu-btn{
+      display: inline-block;
+      transition: .2s linear;
+   }
+
+   #menu-btn.fa-times{
+      transform: rotate(180deg);
+   }
+   
+   
+   .header .nav{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: #fff;
+      border-top: .2rem solid rgba(0,0,0,.1);
+      border-bottom: .2rem solid rgba(0,0,0,.1);
+      padding:1rem 0;
+      text-align: center;
+      flex-flow: column;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .2s linear;
+   }
+   
+   
+   
+   .header .nav.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .nav a{
+      margin:1rem 0;
+      font-size: 2rem;
+   }
+
+   .home{
+      background-position: left;
+   }
+
+   .home .content{
+      width: auto;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .home .content h3{
+      font-size: 4rem;
+   }
+
+   .heading{
+      font-size: 3rem;
+   }
+
+}
+
+
+
+.profile{
+	background-color:#A52A2A;
+    margin-top:15rem;
+	font-size: 2rem;
+}
